@@ -12,7 +12,7 @@ abstract class Action {
         $this->view = new \stdClass();
     }
 
-    protected function render($view, $layout){
+    protected function render($view, $layout = 'layout'){
         $this->view->page = $view;
 
         //Verificar se o layout existe para não gerar conflitos
